@@ -1,0 +1,17 @@
+.caption {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    color: #fff;
+    padding: 4.7px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+#mapid {
+    height: 180px; 
+}

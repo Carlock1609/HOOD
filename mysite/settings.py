@@ -124,7 +124,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
-
-
 AUTH_USER_MODEL = 'users.CustomUser'
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+# STORING STATIC IMAGES
+MEDIA_URL = '/static_images/' # THESE ARE FOR PILLOW SEE IF I CAN HAVE THIS AND THE PHOTO STORAGE
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static_images')
+
